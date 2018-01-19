@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "WebPage",
     dependencies: [
-         .package(url: "https://github.com/Swift-Squirrel/Squirrel.git", from: "0.2.0"),
+         .package(url: "https://github.com/Swift-Squirrel/Squirrel.git", .branch("develop")),
          .package(url: "https://github.com/Swift-Squirrel/NutView.git", from: "0.2.4")
     ],
     targets: [

@@ -36,7 +36,7 @@ NutConfig.NutViewCache.setNutViewCache(config: Config(cacheDirectory: squirrelCo
 
 let server = Server(port: port)
 
-server.route(get: "/") { () -> Any in
+server.get("/") { () -> Any in
     return View(name: "Index")
 }
 
