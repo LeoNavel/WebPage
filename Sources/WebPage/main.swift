@@ -33,6 +33,7 @@ ErrorHandler.sharedInstance.addErrorHandler(handler: NotFoundHandler())
 
 NutConfig.NutViewCache.setNutViewCache(config: Config(cacheDirectory: squirrelConfig.cache.string))
 
+
 let server = Server(port: port)
 
 server.route(get: "/") { () -> Any in
